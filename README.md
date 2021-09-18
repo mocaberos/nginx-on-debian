@@ -1,5 +1,7 @@
 # Nginxセットアップ用スクリプト
 
+https://qiita.com/mocaberos/items/599bc16962bf474eac7b
+
 ### 確認済み動作環境
 - Debian 10（Buster)
 
