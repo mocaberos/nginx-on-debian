@@ -17,14 +17,6 @@ cd ~/nginx
 wget https://nginx.org/download/nginx-$NGINX_VER.tar.gz
 tar vxf nginx-$NGINX_VER.tar.gz; rm -rf nginx-$NGINX_VER.tar.gz
 
-# mruby
-cd ~/nginx
-git clone https://github.com/matsumotory/ngx_mruby.git
-cd ~/nginx/ngx_mruby
-./configure --with-ngx-src-root=../nginx-$NGINX_VER --with-ngx-config-opt=--prefix=/etc/nginx
-make build_mruby
-make generate_gems_config
-
 # NAXSI
 cd ~/nginx
 wget https://github.com/nbs-system/naxsi/archive/$NAXSI_VER.tar.gz -O naxsi_$NAXSI_VER.tar.gz
@@ -55,8 +47,6 @@ git submodule update --init
 # Configure
 cd ~/nginx/nginx-$NGINX_VER
 ./configure \
---add-module=../ngx_mruby \
---add-module=../ngx_mruby/dependence/ngx_devel_kit \
 --add-dynamic-module=../naxsi-$NAXSI_VER/naxsi_src/ \
 --add-dynamic-module=../ngx_brotli/ \
 --add-module=../headers-more-nginx-module \
