@@ -112,6 +112,6 @@ mkdir /etc/nginx/modules/
 cp ~/nginx/nginx-$NGINX_VER/objs/ngx_http_naxsi_module.so /etc/nginx/modules/
 cp ~/nginx/nginx-$NGINX_VER/objs/ngx_http_brotli_filter_module.so /etc/nginx/modules/
 cp ~/nginx/nginx-$NGINX_VER/objs/ngx_http_brotli_static_module.so /etc/nginx/modules/
-cp ~/nginx/naxsi-$NAXSI_VER/naxsi_config/naxsi_core.rules /etc/nginx/naxsi_rules
+cp ~/nginx/naxsi-$NAXSI_VER/naxsi_config/naxsi_core.rules /etc/nginx/naxsi_rules/
 mkdir -p /var/cache/nginx/cache
 rm -rf ~/nginx
