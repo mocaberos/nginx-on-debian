@@ -109,6 +109,7 @@ cd ~/nginx/nginx-$NGINX_VER
 # Install
 make modules; make; make install
 mkdir /etc/nginx/modules/
+mkdir /etc/nginx/naxsi_rules/
 cp ~/nginx/nginx-$NGINX_VER/objs/ngx_http_naxsi_module.so /etc/nginx/modules/
 cp ~/nginx/nginx-$NGINX_VER/objs/ngx_http_brotli_filter_module.so /etc/nginx/modules/
 cp ~/nginx/nginx-$NGINX_VER/objs/ngx_http_brotli_static_module.so /etc/nginx/modules/
