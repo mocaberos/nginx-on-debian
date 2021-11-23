@@ -3,10 +3,13 @@
 https://qiita.com/mocaberos/items/599bc16962bf474eac7b
 
 ### 確認済み動作環境
-- Debian 10（Buster)
+- mrubyバージョン
+  - Debian 10（Buster)
+- mrubyなしバージョン
+  - Debian 11 (Bullseye)
 
 ### インストール詳細
-- nginx 1.21.1
+- nginx 1.21.3
 - mruby拡張(最新版)
   - nginxでmrubyを使用するための拡張
 - naxsi 1.3
